@@ -1,0 +1,56 @@
+11/05/2024 16:42:29 - INFO - src.args -   Configurations:
+{
+  "batch_size": 64,
+  "d_model": 128,
+  "device": "cpu",
+  "digit_seq_len": 6,
+  "dropout": 0.1,
+  "gpt_seq_len": 11,
+  "grad_norm_clip": 1.0,
+  "gtid": "903741839",
+  "log_path": "log/record.log",
+  "lr": 0.0005,
+  "n_digits": 3,
+  "n_head": 4,
+  "n_layer": 4,
+  "n_training_steps": 2000,
+  "name": "Jun Liang Ho",
+  "no_cuda": false,
+  "num_workers": 0,
+  "seed": 42
+}
+11/05/2024 16:42:29 - INFO - __main__ -   name: Jun Liang Ho
+11/05/2024 16:42:29 - INFO - __main__ -   GTID: 903741839
+11/05/2024 16:42:29 - INFO - __main__ -   Peaking at a training example:
+11/05/2024 16:42:29 - INFO - __main__ -   x = [0, 2, 1, 1, 0, 2, 0, 0, 1, 1, 2]
+11/05/2024 16:42:29 - INFO - __main__ -   y = [-1, -1, -1, -1, -1, 0, 0, 1, 1, 2, 2]
+11/05/2024 16:42:29 - INFO - src.model -   number of parameters: 0.80M
+11/05/2024 16:42:29 - INFO - src.trainer -   running on device cpu
+11/05/2024 16:42:30 - INFO - src.trainer -   iter_dt 0.00ms; iter 0: train loss 1.08370
+11/05/2024 16:42:36 - INFO - src.trainer -   iter_dt 45.86ms; iter 100: train loss 0.06200
+11/05/2024 16:42:42 - INFO - src.trainer -   iter_dt 55.15ms; iter 200: train loss 0.02904
+11/05/2024 16:42:47 - INFO - src.trainer -   iter_dt 51.43ms; iter 300: train loss 0.02192
+11/05/2024 16:42:53 - INFO - src.trainer -   iter_dt 45.05ms; iter 400: train loss 0.02557
+11/05/2024 16:42:59 - INFO - src.trainer -   iter_dt 46.93ms; iter 500: train loss 0.02672
+11/05/2024 16:43:04 - INFO - src.trainer -   iter_dt 50.30ms; iter 600: train loss 0.01052
+11/05/2024 16:43:09 - INFO - src.trainer -   iter_dt 47.59ms; iter 700: train loss 0.00296
+11/05/2024 16:43:14 - INFO - src.trainer -   iter_dt 49.23ms; iter 800: train loss 0.01713
+11/05/2024 16:43:19 - INFO - src.trainer -   iter_dt 50.61ms; iter 900: train loss 0.02975
+11/05/2024 16:43:24 - INFO - src.trainer -   iter_dt 48.06ms; iter 1000: train loss 0.00585
+11/05/2024 16:43:29 - INFO - src.trainer -   iter_dt 52.60ms; iter 1100: train loss 0.01019
+11/05/2024 16:43:35 - INFO - src.trainer -   iter_dt 48.14ms; iter 1200: train loss 0.01611
+11/05/2024 16:43:40 - INFO - src.trainer -   iter_dt 48.43ms; iter 1300: train loss 0.00186
+11/05/2024 16:43:46 - INFO - src.trainer -   iter_dt 56.67ms; iter 1400: train loss 0.00396
+11/05/2024 16:43:52 - INFO - src.trainer -   iter_dt 55.73ms; iter 1500: train loss 0.00105
+11/05/2024 16:43:58 - INFO - src.trainer -   iter_dt 66.34ms; iter 1600: train loss 0.00122
+11/05/2024 16:44:04 - INFO - src.trainer -   iter_dt 63.37ms; iter 1700: train loss 0.00038
+11/05/2024 16:44:10 - INFO - src.trainer -   iter_dt 65.61ms; iter 1800: train loss 0.01366
+11/05/2024 16:44:17 - INFO - src.trainer -   iter_dt 63.20ms; iter 1900: train loss 0.01794
+11/05/2024 16:44:23 - INFO - __main__ -   Evaluating on train set...
+11/05/2024 16:44:31 - INFO - src.trainer -   final score: 5000/5000 = 100.00% correct
+11/05/2024 16:44:31 - INFO - __main__ -   Evaluating on test set...
+11/05/2024 16:44:38 - INFO - src.trainer -   final score: 5000/5000 = 100.00% correct
+11/05/2024 16:44:38 - INFO - __main__ -   input sequence   :[[0, 0, 2, 1, 0, 1]]
+11/05/2024 16:44:38 - INFO - __main__ -   predicted sorted :[[0, 0, 0, 1, 1, 2]]
+11/05/2024 16:44:38 - INFO - __main__ -   gt sort          :[0, 0, 0, 1, 1, 2]
+11/05/2024 16:44:38 - INFO - __main__ -   matches          :True
